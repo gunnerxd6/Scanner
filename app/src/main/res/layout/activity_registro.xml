@@ -75,7 +75,7 @@
                     android:layout_marginTop="25dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
-                    android:hint="Rut 18.929.718-1" />
+                    android:hint="Rut 11.111.111-1" />
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

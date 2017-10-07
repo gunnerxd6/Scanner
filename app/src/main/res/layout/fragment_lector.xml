@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mysqltest.pruebalogin2.LectorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".CameraFragment"
+        android:layout_gravity="left|center_vertical"
+        android:id="@+id/lPrincipal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="New Text"
+            android:id="@+id/tv_nombre"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Escanear"
+            android:id="@+id/btScan"
+            android:layout_below="@+id/iconoCamara"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etManual"
+            android:hint="Ingrese codigo"
+            android:maxLength="13"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_action_editor_mode_edit"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Buscar"
+            android:id="@+id/btManual"
+            android:layout_below="@+id/etManual"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <!--Icon camara made by Freepik from www.flaticon.com-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/iconoCamara"
+            android:src="@drawable/camara"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/tv_nombre"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Si la camara de su dispositivo no logra leer el codigo de barra, por favor, intente ingresando manualmente."
+            android:id="@+id/textView10"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/btScan"
+            android:layout_alignRight="@+id/btScan"
+            android:layout_alignEnd="@+id/btScan"
+            android:layout_marginTop="32dp" />
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

@@ -7,59 +7,86 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mysqltest.pruebalogin2.MainActivity"
-    android:background="#9845aeb3">
+    tools:context="mysqltest.pruebalogin2.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ingreso a servicio web"
-        android:id="@+id/textView" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="INICIO DE SESIÓN"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:id="@+id/et_login"
-        android:layout_below="@+id/textView"
+        android:hint="Usuario"
+        android:singleLine="true"
+        android:drawableStart="@drawable/ic_action_action_perm_identity"
+        android:layout_above="@+id/et_password"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="69dp"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:hint="Usuario" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:text="Acceder"
         android:id="@+id/button"
-        android:onClick="validarOnClick"
-        android:layout_marginTop="34dp"
+        android:onClick="ingresar"
         android:layout_below="@+id/et_password"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/et_password"
         android:hint="Contraseña"
+        android:drawableStart="@drawable/ic_action_communication_vpn_key"
+        android:singleLine="true"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/et_login"
-        android:layout_alignEnd="@+id/et_login" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:text="Registrar nuevo usuario"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
         android:onClick="formRegistro"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="¿Aun no dispone de una cuenta?"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        />
+    <!--Icon usuarios made by Madebyoliver from www.flaticon.com-->
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/et_login"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/usuarios"
         />
 </RelativeLayout>

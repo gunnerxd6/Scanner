@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mysqltest.pruebalogin2.Registro2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="REGISTRAR USUARIO"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre de usuario:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/et_usuarioR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/ic_action_action_perm_identity"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Correo electronico:"
+        android:id="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_usuarioR"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/et_correoR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/ic_action_content_mail"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contraseña"
+        android:id="@+id/textView8"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/et_correoR"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_passR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/ic_action_communication_vpn_key"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reingrese contraseña"
+        android:id="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et_passR"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_pass2R"
+        android:drawableStart="@drawable/ic_action_communication_vpn_key"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/et_passR"
+        android:layout_alignEnd="@+id/et_passR"
+        android:maxLines="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Registrar"
+        android:id="@+id/button4"
+        android:onClick="registrarUsuario"
+        android:layout_below="@+id/et_pass2R"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

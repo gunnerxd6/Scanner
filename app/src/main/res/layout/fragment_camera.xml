@@ -13,8 +13,8 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".Scanner"
-        android:background="#9845aeb3">
+        tools:context=".CameraFragment"
+        android:layout_gravity="left|center_vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,8 +53,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/lista"
-            android:layout_marginTop="94dp"
-            android:layout_below="@+id/contenido"
+            android:layout_marginTop="134dp"
+            android:layout_below="@+id/tvSuma"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -76,6 +76,27 @@
             android:layout_below="@+id/textView3"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etManual"
+            android:layout_below="@+id/tvSuma"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btScan"
+            android:layout_alignEnd="@+id/btScan" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/btManual"
+            android:layout_below="@+id/etManual"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 

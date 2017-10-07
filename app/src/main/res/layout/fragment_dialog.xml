@@ -1,0 +1,111 @@
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+       android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context="mysqltest.pruebalogin2.DialogFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView22"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="PRODUCTO ENCONTRADO"
+            android:id="@+id/textView3"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Producto:"
+            android:id="@+id/tv_producto"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <Button
+            android:layout_width="218dp"
+            android:layout_height="50dp"
+            android:text="Cerrar"
+            android:id="@+id/btCerrar"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Precio: "
+            android:id="@+id/tv11"
+            android:layout_below="@+id/textView15"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_desc"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tv_descripcion"
+            android:layout_alignBaseline="@+id/tv_producto"
+            android:layout_alignBottom="@+id/tv_producto"
+            android:layout_toEndOf="@+id/tv_producto"
+            android:layout_toRightOf="@+id/tv_producto" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_precio"
+            android:layout_alignBottom="@+id/tv11"
+            android:layout_toRightOf="@+id/tv11"
+            android:layout_toEndOf="@+id/tv11"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignTop="@+id/tv11" />
+
+        <TextView
+            android:text="Descripción: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textView15"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_below="@+id/tv_descripcion"
+            android:layout_alignLeft="@+id/tv_producto"
+            android:layout_alignStart="@+id/tv_producto"
+            android:fontFamily="sans-serif" />
+
+
+    </RelativeLayout>
